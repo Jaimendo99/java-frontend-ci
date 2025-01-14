@@ -1,4 +1,4 @@
-# Etapa 1: Construcción del JAR usando Maven
+# Use a Maven base image with OpenJDK 17
 FROM maven:3.9.5-eclipse-temurin-17 as builder
 WORKDIR /app
 
