@@ -19,8 +19,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
-    - name: Install Vercel CLI
-      run: npm install -g vercel
+    - name: Install Render CLI
+      run: curl -fsSL https://raw.githubusercontent.com/render-oss/cli/refs/heads/main/bin/install.sh | sh
 
     - name: Build and package with Maven
       run: mvn clean package
